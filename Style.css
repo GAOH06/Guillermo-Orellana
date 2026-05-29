@@ -17,6 +17,40 @@ body {
 }
 
 
+.convenios {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.empresas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    flex-wrap: wrap;
+}
+
+.empresas a {
+    background-color: #1e1e1e;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.empresas a:hover {
+    transform: scale(1.05);
+}
+
+.empresas img {
+    width: 180px;
+    display: block;
+}
+
+
 nav a{
     font-size: x-large;
     color: aliceblue;
@@ -414,4 +448,130 @@ hr {
 .video-container {
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+    .MenuP {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .Logo {
+        width: 180px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: large;
+    }
+
+    .slider {
+        height: 200px;
+    }
+
+    .principal,
+    #principal,
+    .secundario,
+    #secundario,
+    .terciario,
+    #terciario {
+        margin: 20px;
+        font-size: large;
+        text-align: center;
+    }
+
+    .MenuJuegos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .MenuJuegos a img {
+        width: 90%;
+    }
+
+    .card {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    #card {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #card img {
+        height: auto;
+    }
+
+    .juego {
+        flex-direction: column;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .juego img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .invertido {
+        flex-direction: column;
+    }
+
+    .Noticia {
+        height: auto;
+    }
+
+    .Noticia img {
+        height: auto;
+    }
+
+    .producto {
+        width: 90%;
+        max-width: 250px;
+    }
+
+    .pagina-juego {
+        flex-direction: column;
+    }
+
+    .imagen-juego {
+        position: relative;
+        height: auto;
+    }
+
+    .imagen-juego img {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+    }
+
+    .info-juego {
+        width: 100%;
+        padding: 20px;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
 }
